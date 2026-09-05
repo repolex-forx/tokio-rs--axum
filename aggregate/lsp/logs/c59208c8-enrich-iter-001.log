@@ -1,0 +1,58 @@
+[2026-09-05T05:17:04Z] === ENRICH ITERATION 1 START | repo=tokio-rs/axum sha=c59208c8 ===
+[2026-09-05T05:17:04Z] [iter=1] PHASE START: enrich repo=tokio-rs/axum sha=c59208c8 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/c59208c8-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/c59208c86fded335cd85e388030ad59347b0e5ae.nq.gz
+[2026-09-05T05:17:04Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-05T05:17:26Z] [iter=1] AST store loaded triples=1470745 load_secs=22 mem_mb=885 MB
+[2026-09-05T05:17:26Z] [iter=1] Step 2: Finding LSP targets mem_mb=885 MB
+[2026-09-05T05:17:29Z] [iter=1] LSP targets found call_sites=11845 imports=0 extends=0 implements=787 secs=3
+[2026-09-05T05:17:30Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=885 MB
+[2026-09-05T05:17:38Z] [iter=1] Position index built positions=102674 nodes_with_types=123380 secs=7 mem_mb=885 MB
+[2026-09-05T05:17:38Z] [iter=1] Step 3: Starting LSP resolution mem_mb=885 MB already_completed_types=[] already_completed_files=0
+[2026-09-05T05:17:38Z] [iter=1] Resolving target type target_type=call_site count=11845
+[2026-09-05T05:19:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.0 files_done=0 resolved=0 errors=0 current=axum-macros/src/from_request/mod.rs
+[2026-09-05T05:20:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.3 files_done=1 resolved=232 errors=60 current=axum-extra/src/response/file_stream.rs
+[2026-09-05T05:20:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.9 files_done=4 resolved=339 errors=96 current=examples/reqwest-response/src/main.rs
+[2026-09-05T05:22:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.6 files_done=6 resolved=440 errors=302 current=axum/src/serve/mod.rs
+[2026-09-05T05:23:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.6 files_done=7 resolved=566 errors=418 current=axum/src/extract/path/de.rs
+[2026-09-05T05:24:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.5 files_done=8 resolved=677 errors=531 current=axum/src/routing/tests/mod.rs
+[2026-09-05T05:27:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.6 files_done=9 resolved=912 errors=918 current=examples/static-file-server/src/main.rs
+[2026-09-05T05:28:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.5 files_done=11 resolved=1163 errors=1022 current=axum-extra/src/extract/form.rs
+[2026-09-05T05:29:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.1 files_done=13 resolved=1240 errors=1094 current=axum/src/routing/path_router.rs
+[2026-09-05T05:30:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.6 files_done=15 resolved=1511 errors=1259 current=axum/src/test_helpers/test_client.rs
+[2026-09-05T05:31:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.2 files_done=18 resolved=1645 errors=1333 current=axum-extra/src/typed_header.rs
+[2026-09-05T05:32:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.1 files_done=21 resolved=1795 errors=1438 current=examples/diesel-postgres/src/main.rs
+[2026-09-05T05:33:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.9 files_done=29 resolved=2035 errors=1650 current=examples/serve-with-hyper/src/main.rs
+[2026-09-05T05:36:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.3 files_done=32 resolved=2223 errors=1953 current=axum/src/extract/matched_path.rs
+[2026-09-05T05:37:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.2 files_done=33 resolved=2279 errors=2072 current=axum-extra/src/routing/typed.rs
+[2026-09-05T05:38:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.7 files_done=40 resolved=2398 errors=2255 current=axum-extra/src/extract/optional_path.rs
+[2026-09-05T05:40:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.5 files_done=42 resolved=2467 errors=2482 current=examples/anyhow-error-response/src/main.rs
+[2026-09-05T05:41:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.1 files_done=45 resolved=2658 errors=2553 current=axum-macros/src/debug_handler.rs
+[2026-09-05T05:41:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.6 files_done=49 resolved=2954 errors=2621 current=axum/src/routing/tests/handle_error.rs
+[2026-09-05T05:42:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.2 files_done=52 resolved=3071 errors=2695 current=examples/websockets/src/client.rs
+[2026-09-05T05:42:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.9 files_done=56 resolved=3274 errors=2759 current=axum-extra/src/handler/mod.rs
+[2026-09-05T05:43:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.5 files_done=60 resolved=3343 errors=2826 current=axum/tests/panic_location.rs
+[2026-09-05T05:44:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.0 files_done=66 resolved=3514 errors=2879 current=axum-core/src/response/into_response.rs
+[2026-09-05T05:44:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.6 files_done=71 resolved=3688 errors=2939 current=axum-macros/tests/from_request/pass/state_via.rs
+[2026-09-05T05:45:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.2 files_done=74 resolved=3786 errors=3005 current=axum-extra/src/response/multiple.rs
+[2026-09-05T05:45:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.7 files_done=78 resolved=3904 errors=3054 current=examples/form/src/main.rs
+[2026-09-05T05:46:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.3 files_done=84 resolved=4090 errors=3114 current=axum-core/src/ext_traits/request.rs
+[2026-09-05T05:47:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.9 files_done=88 resolved=4272 errors=3188 current=axum/src/extract/nested_path.rs
+[2026-09-05T05:47:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.5 files_done=90 resolved=4339 errors=3255 current=axum-extra/src/extract/cookie/mod.rs
+[2026-09-05T05:48:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.2 files_done=96 resolved=4531 errors=3333 current=examples/chat/src/main.rs
+[2026-09-05T05:48:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.8 files_done=100 resolved=4699 errors=3398 current=axum/src/middleware/from_extractor.rs
+[2026-09-05T05:49:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.3 files_done=106 resolved=4865 errors=3461 current=axum-macros/tests/from_request/pass/state_field_infer.rs
+[2026-09-05T05:49:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.8 files_done=113 resolved=4954 errors=3519 current=axum-core/src/extract/request_parts.rs
+[2026-09-05T05:50:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.4 files_done=123 resolved=5148 errors=3587 current=axum/src/test_helpers/counting_cloneable_state.rs
+[2026-09-05T05:51:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.0 files_done=136 resolved=5382 errors=3657 current=examples/customize-extractor-error/src/main.rs
+[2026-09-05T05:51:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.5 files_done=143 resolved=5516 errors=3720 current=axum/src/middleware/map_request.rs
+[2026-09-05T05:52:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.1 files_done=153 resolved=5678 errors=3787 current=axum-core/src/response/append_headers.rs
+[2026-09-05T05:52:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.6 files_done=179 resolved=5765 errors=3848 current=examples/customize-extractor-error/src/derive_from_request.rs
+[2026-09-05T05:53:05Z] [iter=1] Target type resolved target_type=call_site resolved=5856 errors=3889 secs=2128 mem_mb=885 MB
+[2026-09-05T05:53:05Z] [iter=1] Resolving target type target_type=implements_clause count=787
+[2026-09-05T05:53:25Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=36.3 files_done=1 resolved=2 errors=0 current=examples/consume-body-in-extractor-or-middleware/src/main.rs
+[2026-09-05T05:53:56Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=36.9 files_done=34 resolved=299 errors=0 current=axum-extra/src/extract/cookie/signed.rs
+[2026-09-05T05:55:23Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=38.3 files_done=58 resolved=484 errors=0 current=axum/src/routing/method_routing.rs
+[2026-09-05T05:57:22Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=40.3 files_done=71 resolved=630 errors=0 current=axum-extra/src/routing/resource.rs
+[2026-09-05T05:57:30Z] [iter=1] Target type resolved target_type=implements_clause resolved=680 errors=0 secs=265 mem_mb=885 MB
+[2026-09-05T05:58:25Z] [iter=1] Step 5: Writing final enrichment file triples=94048
+[2026-09-05T05:58:27Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/c59208c86fded335cd85e388030ad59347b0e5ae.nq.gz size_kb=2289
+[2026-09-05T05:58:27Z] [iter=1] PHASE END: enrich elapsed_s=2483 elapsed_min=41.4 total_triples=94048
